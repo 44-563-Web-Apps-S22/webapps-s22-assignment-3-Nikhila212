@@ -70,4 +70,30 @@ This table represents the sports that I want to try. This table consists of 3 co
          <td>$200</td>
      </tr>
  </table>
+
+ <hr>
+
+ <h2>CODE DISPLAY</h2>
+
+ <blockquote = "https://wcipeg.com/wiki/Convex_hull_trick">The convex hull trick is a technique 
+      (perhaps best classified as a data structure) used to determine efficiently, after preprocessing,
+       which member of a set of linear functions in one variable attains an extremal value for a given 
+       value of the independent variable</blockquote>
+
+       <a href="https://wcipeg.com/wiki/Convex_hull_trick">Link to the code</a>
+
+       <pre>
+          typedef int ftype;
+          typedef complex<ftype> point;
+          #define x real
+          #define y imag
+          
+          ftype dot(point a, point b) {
+              return (conj(a) * b).x();
+          }
+          
+          ftype cross(point a, point b) {
+              return (conj(a) * b).y();
+          }          
+       </pre>
 </html>
